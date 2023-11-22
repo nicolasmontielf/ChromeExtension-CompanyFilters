@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Remove companies",
+    "description": "Removes companies from LinkedIn jobs search results.",
+    "version": "1.0",
+    "icons": {
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["scripts/main.js"],
+            "matches": [
+                "https://www.linkedin.com/jobs*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+    <style>
+        .container {
+            width: 25rem;
+            height: 100%;
+            padding: 2em 1em;
+            text-align: center;
+        }
+
+        .input {
+            height: 7rem;
+            width: 18rem;
+            display: block;
+        }
+
+        .button-container {
+            margin-top: 1rem;
+        }
+
+        .button {
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            margin-right: 7px;
+            border: solid gray 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Write the companies you want to avoid (separates by comma)</h3>
+        <div class="pure-form">
+            <textarea type="text" class="input" rows="10" id="list"></textarea>
+
+            <div class="button-container">
+                <button class="pure-button pure-button-secondary" id="reset-list-button">Reset</button>
+                <button class="pure-button pure-button-primary" id="update-list-button">Update</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="popup.js" type="module"></script>
+</body>
+
+</html>
